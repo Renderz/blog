@@ -6,12 +6,17 @@ export default defineConfig({
   description: 'Renderio 的个人博客',
   locales: [['zh-CN', '中文']],
   menus: {
-    '/article': [
+    // '/article': [
+    //   {
+    //     title: '2021-04',
+    //     children: ['article/202104/20210416'],
+    //   },
+    // ],
+    '/tech': [
       {
-        title: '2021-04',
-        children: ['article/202104/20210416'],
+        title: '工程化',
+        children: ['tech/founda/version'],
       },
     ],
-    '/tech': [],
   },
 });
