@@ -19,5 +19,5 @@ export default defineConfig({
       },
     ],
   },
-  publicPath: 'blog',
+  publicPath: '/blog/',
 });
