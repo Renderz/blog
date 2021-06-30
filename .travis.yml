@@ -1,0 +1,16 @@
+language: node_js
+
+node_js: '12'
+
+git:
+  quite: true
+  depth: 1
+  submodules: false
+
+cache:
+  directories:
+    - node_modules
+
+install: yarn
+
+script: yarn build
