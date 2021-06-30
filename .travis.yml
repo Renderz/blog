@@ -4,7 +4,7 @@ node_js: '12'
 
 branches:
   only:
-    - master
+    - main
 
 git:
   quite: true
@@ -24,4 +24,4 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local-dir: ./dist/
-  on: master
+  on: main
