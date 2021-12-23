@@ -1,7 +1,4 @@
 ---
 hero:
-    title: Renderio 的个人博客
-    actions: 
-        - text: 参观
-            link: /tech
+  title: 一位被睡眠诅咒的精神病人最后的自我拉扯
 ---
