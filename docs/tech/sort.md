@@ -36,3 +36,32 @@ var sortArray = function(nums) {
   return nums;
 };
 ```
+
+## 冒泡排序
+
+时间复杂度 O(N^2),空间复杂度 O(1)
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function(nums) {
+  if (nums.length === 0 || nums.length === 1) {
+    return nums;
+  }
+
+  // 2. 冒泡排序
+  for (let i = nums.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      if (nums[j] > nums[j + 1]) {
+        nums[j] = nums[j] ^ nums[j + 1];
+        nums[j + 1] = nums[j] ^ nums[j + 1];
+        nums[j] = nums[j] ^ nums[j + 1];
+      }
+    }
+  }
+
+  return nums;
+};
+```
