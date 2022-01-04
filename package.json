@@ -28,6 +28,8 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
-    "antd": "^4.17.4"
+    "antd": "^4.17.4",
+    "rc-util": "^5.16.1",
+    "unstated-next": "^1.1.0"
   }
 }
