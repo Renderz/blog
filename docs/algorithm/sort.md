@@ -1,6 +1,6 @@
 ---
-title: 各种排序算法
-order: 6
+title: 排序算法
+order: 1
 ---
 
 ## 选择排序
@@ -75,3 +75,41 @@ var sortArray = function(nums) {
   return nums;
 };
 ```
+
+## 插入排序
+
+1. 理解成摸牌，如果牌是[2,1]，那么换成[1,2]，此时 0-1 上递增。
+2. 又摸一张牌, 如果牌是 5，那么是[1,2,5]，不需要换牌。
+3. 又摸一张牌，如果牌是 4，那么是[1,2,3,5,4]，将 4,5 交换。
+4. 又摸一张牌，如果牌是 2，那么是[1,2,3,4,5,2]。先将 2,5 交换，然后 2,4 交换，然后 2,3 交换。
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortArray = function(nums) {
+  if (nums.length === 0 || nums.length === 1) {
+    return nums;
+  }
+
+  // 3. 插入排序
+  for (let i = 1; i < nums.length; i++) {
+    for (let j = i - 1; j >= 0 && nums[j] > nums[j + 1]; j--) {
+      nums[j] = nums[j] ^ nums[j + 1];
+      nums[j + 1] = nums[j] ^ nums[j + 1];
+      nums[j] = nums[j] ^ nums[j + 1];
+    }
+  }
+
+  return nums;
+};
+```
+
+## 归并排序
+
+见递归章节
+
+## 快排
+
+见递归章节
